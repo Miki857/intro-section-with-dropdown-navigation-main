@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Intro section with dropdown navigation</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__logo image"></div>
+      <div class="header__menu image" onclick="openSideMenu();"></div>
+      <!-- LATERAL MENU -->
+      <div class="sideMenu__container hidden">
+        <div class="sideMenu">
+          <div class="closeMenu__icon image" onclick="closeSideMenu();"></div>
+          <div class="dropdown">
+            <button class="button-type2 dropdownTitle" onclick="showDropDownOptions('dropdown-options__features');">Features <i class='bx bx-chevron-down'></i></button>
+            <div class="dropdown-options dropdown-options__features">
+              <div class="flex gap-1"><div class="todoIcon image"></div><a href="#">Todo List</a></div>
+              <div class="flex gap-1"><div class="calendarIcon image"></div><a href="#">Calendar</a></div>
+              <div class="flex gap-1"><div class="remindersIcon image"></div><a href="#">Reminders</a></div>
+              <div class="flex gap-1"><div class="planningIcon image"></div><a href="#">Planning</a></div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="button-type2 dropdownTitle" onclick="showDropDownOptions('dropdown-options__company');">Company <i class='bx bx-chevron-down'></i></button>
+            <div class="dropdown-options dropdown-options__company">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+          <button class="button-type2 button">Login</button>
+          <button class="button-type3 button">Register</button>
+        </div>
+      </div>
+      <!-- HIDDEN On MOBILE -->
+      <div class="menuElements flex gap-2">
+        <div class="dropdown">
+          <button class="button-type2 dropdownTitle">Features <i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-options_desktop dropdown-options__features">
+            <div class="flex gap-1"><div class="todoIcon image"></div><a href="#">Todo List</a></div>
+            <div class="flex gap-1"><div class="calendarIcon image"></div><a href="#">Calendar</a></div>
+            <div class="flex gap-1"><div class="remindersIcon image"></div><a href="#">Reminders</a></div>
+            <div class="flex gap-1"><div class="planningIcon image"></div><a href="#">Planning</a></div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="button-type2 dropdownTitle">Company <i class='bx bx-chevron-down'></i></button>
+          <div class="dropdown-options_desktop dropdown-options__company">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+      </div>
+      <div class="userButtons self-end">
+        <button class="button-type2 button">Login</button>
+        <button class="button-type3 button">Register</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__background image"></div>
+
+      <section class="main__info">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="button-type1 button">Learn more</button>
+
+        <div class="main__logos">
+          <div class="clients1 image"></div>
+          <div class="clients2 image"></div>
+          <div class="clients3 image"></div>
+          <div class="clients4 image"></div>
+        </div>
+      </section>
+    </main>
+    <!-- SCRIPTS -->
+    <script src="assets/js/SideMenu.js" defer></script>
+  </body>
+</html>
