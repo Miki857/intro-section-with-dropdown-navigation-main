@@ -27,6 +27,9 @@ html{
     width: 100%;
     min-height: 100vh;
 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
     
     .userButtons, .menuElements{
         visibility: hidden;
@@ -164,6 +167,7 @@ html{
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        align-items: center;
 
         .main__background{
             background-image: url("../images/image-hero-mobile.png");
@@ -251,8 +255,9 @@ html{
 
         .main__background{
             background-image: url("../images/image-hero-desktop.png") !important;
-            max-width: 40% !important;
             aspect-ratio: 0.75 !important;
+            height: 70% !important;
+            width: auto !important;
         }
 
         .main__info{
@@ -260,6 +265,7 @@ html{
             justify-content: end !important;
             padding: 0 !important;
             gap: 3rem !important;
+            height: min-content;
 
             h1{
                 font-size: 4rem;
@@ -279,6 +285,8 @@ html{
 
     .main{
         padding: 0 10%;
+
+        max-height: 90vh;
     }
 }
 
